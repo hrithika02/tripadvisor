@@ -1,0 +1,462 @@
+<!--* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+}
+
+.navbar_s2 {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    cursor:pointer;
+}
+.navbar_s2 p:hover{
+    text-decoration: underline;
+    transition-duration: 1s;
+}
+
+.navbar_s1 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.navbar_s3{
+    background: white;
+    border: 1px solid black;
+    border-radius: 30px;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    cursor:pointer;
+}
+.enquire {
+    border: solid black 0.5px;
+    background-color: yellow;
+    position: sticky;
+    bottom: 10px;
+    display: inline-block;
+    padding: 15px;
+    font-size: 20px;
+    left: 89%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.first_look {
+    height: 750px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: bgChange 30s infinite;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.first_look_searchbar {
+    font-size: 17px;
+    border-radius: 20px;
+    width: 40%;
+    height: 25px;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: white;
+    align-items: center;
+    display: flex;
+}
+
+.searchbar_input {
+    background-color: transparent;
+    border: 1px solid white;
+    width: 100%;
+    padding-left: 10px;
+}
+.search-bar:focus{
+    border: none;
+}
+@keyframes bgChange {
+    0% {
+        background-image: linear-gradient(rgba(199, 200, 254, 0.1), rgba(199, 200, 254, 0.1)), url(./images/img3.jpg);
+    }
+
+    100% {
+        background-image: linear-gradient(rgba(199, 200, 254, 0.1), rgba(199, 200, 254, 0.1)), url(./images/paris.jpg);
+    }
+}
+
+.things {
+    display: flex;
+    border: solid black 1px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 30px;
+    width: 700px;
+    justify-content: space-around;
+    position: absolute;
+    top: 200px;
+    left: 390px;
+    z-index: 1;
+    cursor:pointer;
+}
+
+.search-bar {
+    display: flex;
+    gap: 12px;
+    background: white;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.954);
+    max-width: 950px;
+    align-items: center;
+    margin-left: 385px;
+    margin-top: 10px;
+}
+
+.search-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 140px;
+}
+
+label {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 4px;
+    color: #444;
+}
+
+input,select {
+    padding: 8px 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.search-btn {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.booking{
+    position:absolute;
+    top:300px;
+    margin: 0 auto;
+    animation: zoomIn 3s ease-in-out;
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.book{
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 768px) {
+    .search-bar {
+        flex-direction: column;
+        border-radius: 20px;
+        gap: 16px;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+}
+
+.img {
+    height: 50px;
+    width: 50px;
+}
+
+.packages {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/*.Packages_pics {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.Packages_cards {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 20px;
+    border: solid white 1px;
+    box-shadow: 0px 0px 24px 1px rgb(14 2 8 / 8%);
+    margin-bottom: 20px;
+    cursor:pointer;
+    gap: 10px;
+    transition: transform 0.5s ease;
+}*/
+.Packages_cards:hover{
+    transform: scale(1.05);
+}
+.Packages_pics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    /* Add space between cards */
+    padding: 20px;
+}
+
+.Packages_cards {
+    flex: 1 1 250px;
+    max-width: 300px;
+    box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+    transition: transform 0.5s ease;
+}
+.button {
+    vertical-align: top;
+    display: inline;
+    padding: 10px;
+    background-color: black;
+    position: relative;
+    bottom: 10px;
+    margin-top: 20px;
+}
+
+.Packages_cards img {
+    width: 300px;
+    height: 250px;
+}
+
+.mostvisited {
+    display: flex;
+    gap: 20px;
+    width: 1050px;
+    border: 0.1px solid rgb(250, 250, 250);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: antiquewhite;
+    box-shadow: 0px 0px 24px 1px rgb(14 2 8 / 8%);
+    margin: 0 auto;
+    animation: zoomIn 10s ease-in-out;
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.mostvisited_title {
+    margin: auto 0;
+}
+
+.mostvisited_cities img {
+    height: 250px;
+    width: 250px;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+    transform: ;
+}
+
+.mostvisited_cities {
+    display: flex;
+}
+
+.i1,
+.i2,
+.i3 {
+    position: relative;
+}
+
+.i11,
+.i22,
+.i33 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    padding: 10px;
+}
+
+button {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 7px;
+}
+
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.footer_s1 {
+    display: flex;
+    gap: 20px;
+
+}
+
+.footer_s2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_s21 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer_s22 {
+    display: flex;
+    gap: 10px;
+    size: 50px;
+}
+
+.footer_s11 p {
+    margin-bottom: 5px;
+}
+
+.footer_s12 p {
+    margin-bottom: 5px;
+}
+
+.footer_s13 p {
+    margin-bottom: 5px;
+}
+@media screen and (max-width: 800px) {
+    body{
+    font-size: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+  .mostvisited {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    animation: none;
+  }
+
+  .mostvisited_cities {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 20px;
+  }
+ .mostvisited_title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .mostvisited_cities > div {
+    width: 90%;
+    max-width: 350px;
+    position: relative;
+  }
+
+  .mostvisited_cities img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .i11, .i22, .i33 {
+    position: relative;
+    color: black;
+    background-color: #fffbe6;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .i11 button, .i22 button, .i33 button {
+    margin-top: 8px;
+  }
+  .booking {
+    margin: 20px auto;
+    padding: 10px;
+    width: 90%;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .book {
+    width: 100%;
+  }
+
+  .search-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+    .navbar_s2{
+        display: none;
+    }
+    .enquire{
+        font-size: 10px;
+    }
+    .things{
+        display: none;
+    }
+}

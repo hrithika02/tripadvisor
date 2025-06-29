@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wanderlust</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Young+Serif&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar_s1">
+            <img src="./images/planet-earth.png" width="30px" height="30px">
+            <h1>WanderLust</h1>
+        </div>
+        <div class="navbar_s2">
+            <p>Home</p>
+            <p>Packages</p>
+            <p>Discover</p>
+            <p>Things to do</p>
+            <p>Contact</p>
+        </div>
+        <div class="navbar_s3">
+            <p>Login/sign in</p>
+        </div>
+    </div>
+    <div class="first_look">
+        <div class="first_look_searchbar">
+            <i class="fa-solid fa-magnifying-glass-location"></i>
+            <input type="text" placeholder="choose your favourite package" class="searchbar_input">
+        </div>
+    </div>
+    <div class="things">
+        <div class="things1">
+            <img src="./images/homestay.png" class="img">
+            <p>HomeStays</p>
+        </div>
+        <div class="things2">
+            <img src="./images/airplane.png" class="img">
+            <p>Flights</p>
+        </div>
+        <div class="things3">
+            <img src="./images/restaurant.png" class="img">
+            <p>Dining</p>
+        </div>
+        <div class="things4">
+            <img src="./images/train.png" class="img">
+            <p>Trains</p>
+        </div>
+        <div class="things5">
+            <img src="./images/resort.png" class="img">
+            <p>Hotels</p>
+        </div>
+        <div class="things6">
+            <img src="./images/passport.png" class="img">
+            <p>Visa</p>
+        </div>
+    </div>
+    <div class="booking">
+        <form class="search-bar">
+            <div class="book">
+            <div class="search-item">
+                <label for="destination">Where to?</label>
+                <input type="text" id="destination" placeholder="Enter destination" required>
+            </div>
+
+            <div class="search-item">
+                <label for="checkin">Check-in</label>
+                <input type="date" id="checkin" required>
+            </div>
+            </div>
+            <div class="book">
+            <div class="search-item">
+                <label for="checkout">Check-out</label>
+                <input type="date" id="checkout" required>
+            </div>
+
+            <div class="search-item">
+                <label for="travellers">Travellers</label>
+                <input type="text" id="travellers" placeholder="e.g. 2 travellers, 1 room" required>
+            </div>
+            </div>
+            <div class="book">
+                <button type="submit" class="search-btn">Search</button>
+            </div>
+        </form>
+    </div>
+    <div class="packages">
+        <h1>Popular-Packages</h1>
+        <p style="font-size: 15px;">Choose yours</p>
+        <div class="Packages_pics">
+            <div class="Packages_cards">
+                <img src="./images/c1.jpg">
+                <h2>Tropical Bliss:Coast Getaway Experience Caribbean</h2>
+                <p>Explore pristine beaches and turquoise waters under sunny skies.</p>
+                <button class="button"> Explore Packages </button>
+            </div>
+            <div class="Packages_cards">
+                <img src="./images/c2.jpg">
+                <h2>Sunrise in the Wild: Mountain Camping Experience</h2>
+                <p>Camp among the hills and greet the sunrise in the great outdoors</p>
+                <button class="button"> Explore Packages </button>
+            </div>
+            <div class="Packages_cards">
+                <img src="./images/c3.jpg">
+                <h2>Starry Nights: Tranquil Forest Lake Camping Retreat</h2>
+                <p>A quiet retreat under the stars with lakeside tent stays</p>
+                <button class="button"> Explore Packages </button>
+            </div>
+            <div class="Packages_cards">
+                <img src="./images/c4.jpg">
+                <h2>Sunset Shores: Blissful and Scenic Bali Family Escape</h2>
+                <p>Enjoy sunsets and bonding time with your family on serene beaches</p>
+                <button class="button"> Explore Packages </button>
+            </div>
+        </div>
+        <div class="Packages_pics">
+            <div class="Packages_cards">
+                <img src="./images/c5.jpg">
+                <h2>Overwater Escape – Maldives Magic</h2>
+                <p>Enjoy candlelit dinners and serene views on the water villas.</p>
+                <button class="button"> Explore Packages </button>
+            </div>
+            <div class="Packages_cards">
+                <img src="./images/c6.jpg">
+                <h2>City Dreams:New York Explorer</h2>
+                <p>Dive into the energy of NYC with iconic sights and skyline views</p>
+                <button class="button"> Explore Packages </button>
+            </div>
+            <div class="Packages_cards">
+                <img src="./images/c7.jpg">
+                <h2>Sky High: Himalayan Hiking Adventure</h2>
+                <p>Conquer mountain trails with scenic summit views</p>
+                <button class="button"> Explore Packages </button>
+            </div>
+            <div class="Packages_cards">
+                <img src="./images/c8.jpg">
+                <h2>Gate to Heaven: Bali Culture & Volcano Tour</h2>
+                <p>Discover Bali's iconic temples and majestic Mt. Agung at sunrise</p>
+                <button class="button"> Explore Packages </button>
+            </div>
+        </div>
+    </div>
+    <div class="mostvisited">
+        <div class="mostvisited_title">
+            <h1>Most-visited Cities</h1>
+            <p>Tourist Attractions</p>
+        </div>
+        <div class="mostvisited_cities">
+            <div class="i1">
+                <img src="./images/newyork.jpg">
+                <div class="i11">
+                    <h3>New York</h3>
+                    <button>View Packages</button>
+                </div>
+            </div>
+            <div class="i2">
+
+                <img src="./images/paris.jpg">
+                <div class="i22">
+                    <h3>Paris</h3>
+                    <button>View Packages</button>
+                </div>
+            </div>
+            <div class="i3">
+                <img src="./images/bali.jpg">
+                <div class="i33">
+                    <h3>Bali</h3>
+                    <button>View Packages</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="enquire">
+        <p>Enquire Now</p>
+    </div>
+    
+    <div class="footer">
+        <div class="footer_s1">
+            <div class="footer_s11">
+                <h3>About Tripadvisor</h3><br>
+                <p>About Us</p>
+                <p>Press</p>
+                <p>Resources and Policies</p>
+                <p>Careers</p>
+                <p>Trust & Safety</p>
+                <p>Contact us</p>
+                <p>Tripadvisor Technology</p>
+            </div>
+            <div class="footer_s12">
+                <h3>Explore</h3><br>
+                <p>Write a review</p>
+                <p>Add a Place</p>
+                <p>Join </p>
+                <p>Travellers' Choice</p>
+                <p>Help Centre</p>
+                <p>Travel Stories</p>
+            </div>
+            <div class="footer_s13">
+                <h3>Do Business With Us</h3><br>
+                <p>Owners & DMO/CVB</p>
+                <p>Business Advantage</p>
+                <p>Sponsored Placements</p>
+                <p>Access our Content API</p>
+                <p>Get The App</p>
+                <p>iPhone App</p>
+                <p>Android App</p>
+            </div>
+        </div>
+        <div class="footer_s2">
+            <div class="footer_s21">
+                <img src="./images/planet-earth.png" width="30px" height="30px">
+                <h1>WanderLust</h1>
+            </div>
+            <div class="footer_s22">
+                <i class="fa-brands fa-facebook" style="color: #fafafa;"></i>
+                <i class="fa-brands fa-square-instagram" style="color: #fafafa;"></i>
+                <i class="fa-brands fa-square-whatsapp" style="color: #fafafa;"></i>
+                <i class="fa-brands fa-square-x-twitter" style="color: #fafafa;"></i>
+                <i class="fa-brands fa-youtube" style="color: #fafafa;"></i>
+            </div>
+        </div>
+    </div>
+</body>
